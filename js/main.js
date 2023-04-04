@@ -2,7 +2,7 @@ const typed = new Typed('.typed', {
 	strings: [
 		'<i class="prenda">Malla</i>',
 		'<i class="prenda">Bikini</i>',
-		'<i class="prenda">Bermuda</i>',
+		'<i class="prenda">Toallas</i>',
 		
 	],
 

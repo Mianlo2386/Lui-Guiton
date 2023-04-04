@@ -1,7 +1,7 @@
 var typed = new Typed('.typed', {
 	strings: [
 		'<i class="prenda">Malla</i>',
-		'<i class="prenda">Bermuda</i>',
+		'<i class="prenda">Toallas</i>',
 		'<i class="prenda">Bikini</i>',
 		
 	],
