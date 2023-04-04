@@ -164,8 +164,32 @@ img {
 
 .contenedor-imagenes img {
      width: calc(33.33% - 10px);
-     
+     animation: ver 3s;
      margin-bottom: 20px;
+     cursor: pointer;
+}
+
+.contenedor-imagenes img:hover {
+     opacity: 0.8; /* Reducimos la opacidad de la imagen al pasar el mouse por encima */
+}
+
+.contenedor-imagenes img.ampliada {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+     z-index: 999;
+     transform: scale(1.2); /* Ampliamos la imagen al 150% de su tamaño original */
+}
+@keyframes ver {
+     from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }  
 }
 .hero {
      display: flex;

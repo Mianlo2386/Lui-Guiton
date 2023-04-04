@@ -19,3 +19,9 @@ const typed = new Typed('.typed', {
 	cursorChar: '|', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
+const imagenes = document.querySelectorAll('.contenedor-imagenes img');
+imagenes.forEach((imagen) => {
+     imagen.addEventListener('click', () => {
+          imagen.classList.toggle('ampliada');
+     });
+});
