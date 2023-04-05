@@ -29,6 +29,7 @@ body {
 }
 
 header {
+     
 	display: flex;
      align-items: center;
      justify-content: space-between;
@@ -170,7 +171,7 @@ img {
 }
 
 .contenedor-imagenes img:hover {
-     opacity: 0.8; /* Reducimos la opacidad de la imagen al pasar el mouse por encima */
+     opacity: 1; /* Reducimos la opacidad de la imagen al pasar el mouse por encima */
 }
 
 .contenedor-imagenes img.ampliada {
@@ -181,8 +182,12 @@ img {
      bottom: 0;
      margin: auto;
      z-index: 999;
-     transform: scale(1.2); /* Ampliamos la imagen al 150% de su tamaño original */
+     width: 80vh;
+     height: 80vh; /* Establecemos una altura fija para la imagen */
+     object-fit: contain; /* Ajustamos la imagen para que quepa dentro del área establecida */
+     transform: scale(1.5); /* Ampliamos la imagen al 150% de su tamaño original */
 }
+
 @keyframes ver {
      from {
           transform: rotate(0deg);
